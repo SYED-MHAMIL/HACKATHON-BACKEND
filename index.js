@@ -17,7 +17,12 @@ import BeneficiaryRoute from './routes/beneficary.js';
     app.get("/",(req,res)=>{
                res.send("d hello ")
     })
-app.use(cors('*'))
+    app.use(
+        cors({
+          origin: "https://hackathon-backend-xi.vercel.app/", // frontend ka URL
+          credentials: true,
+        })
+      );
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended : false}))
 app.get('/',()=>{
