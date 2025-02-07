@@ -1,0 +1,17 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore build files
+.next/
+out/
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
